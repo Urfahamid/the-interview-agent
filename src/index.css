@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #0e0e0e;
+    color: #e5e2e1;
+    font-family: 'Sora', sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Neural Grid Animation */
+.neural-bg {
+  background: radial-gradient(circle at 50% 30%, rgba(0, 240, 255, 0.08) 0%, rgba(206, 93, 255, 0.04) 45%, rgba(14, 14, 14, 1) 80%);
+}
+
+.neural-grid {
+  background-size: 50px 50px;
+  background-image: 
+    linear-gradient(to right, rgba(59, 73, 75, 0.12) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(59, 73, 75, 0.12) 1px, transparent 1px);
+  mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 75%);
+}
+
+/* Custom Scrollbars */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(19, 19, 19, 0.5);
+  border-radius: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(59, 73, 75, 0.5);
+  border-radius: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #00f0ff;
+}
+
+/* Glassmorphism & Cyber Effects */
+.glass-panel {
+  background: rgba(28, 27, 27, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(59, 73, 75, 0.3);
+  will-change: transform;
+}
+
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.35);
+}
+
+.glow-purple {
+  box-shadow: 0 0 20px rgba(235, 178, 255, 0.35);
+}

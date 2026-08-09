@@ -1,0 +1,6 @@
+{
+  "name": "The Interview Agent",
+  "description": "AI-powered candidate assessment and interview platform with live chat, curriculum exploration, and performance analytics",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
