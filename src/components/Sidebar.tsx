@@ -16,7 +16,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab }) => 
   ];
 
   return (
-    <aside className="fixed left-0 top-0 h-full w-72 bg-[#0e0e0e]/70 backdrop-blur-2xl z-50 flex flex-col border-r border-[#3b494b]/20 shadow-[0_0_40px_rgba(0,0,0,0.5)]">
+    <aside className="hidden md:flex fixed left-0 top-0 h-screen w-80 bg-[#0e0e0e]/70 backdrop-blur-2xl z-50 flex flex-col border-r border-[#3b494b]/20 shadow-[0_0_40px_rgba(0,0,0,0.5)]">
       {/* Brand Header */}
       <div className="p-6 flex items-center gap-3 mb-6">
         <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#00f0ff] via-[#ce5dff] to-[#ebb2ff] p-0.5 shadow-[0_0_15px_rgba(0,240,255,0.4)]">
