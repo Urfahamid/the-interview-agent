@@ -42,7 +42,7 @@ export function App() {
       />
 
       {/* Main Content View Container */}
-      <main className="pl-80 pt-24 pr-8 min-h-screen flex flex-col">
+      <main className="pl-0 md:pl-80 pt-24 px-4 md:pr-8 min-h-screen flex flex-col w-full max-w-full overflow-x-hidden">
         {activeTab === 'dashboard' && (
           <DashboardView
             candidate={selectedCandidate}
